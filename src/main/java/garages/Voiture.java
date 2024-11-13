@@ -8,11 +8,12 @@ import lombok.ToString;
 import java.io.PrintStream;
 import java.util.*;
 
-@RequiredArgsConstructor
-@ToString
+
 /**
  * Représente une voiture qui peut être stationnée dans des garages.
  */
+@RequiredArgsConstructor
+@ToString
 public class Voiture {
 
 	@Getter
@@ -66,7 +67,7 @@ public class Voiture {
 	public boolean estDansUnGarage() {
 		// TODO: Implémenter cette méthode
 		throw new UnsupportedOperationException("Pas encore implémenté");
-		// Vrai si le dernier stationnement est en cours
+		// Vrai si il y a des stationnements et le dernier stationnement est en cours
 	}
 
 	/**
@@ -76,11 +77,11 @@ public class Voiture {
 	 * Exemple :
 	 * 
 	 * <pre>
-	 * Garage Castres:
-	 *		Stationnement{ entree=28/01/2019, sortie=28/01/2019 }
-	 *		Stationnement{ entree=28/01/2019, en cours }
-	 *  Garage Albi:
-	 *		Stationnement{ entree=28/01/2019, sortie=28/01/2019 }
+	 * Garage(name=Universite Champollion Albi):
+	 * 		Stationnement{ entree=13/11/2024, sortie=13/11/2024 }
+	 * Garage(name=ISIS Castres):
+	 * 		Stationnement{ entree=13/11/2024, sortie=13/11/2024 }
+	 * 		Stationnement{ entree=13/11/2024, en cours }
 	 * </pre>
 	 *
 	 * @param out l'endroit où imprimer (ex: System.out pour imprimer dans la

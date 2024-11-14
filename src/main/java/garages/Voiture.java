@@ -87,6 +87,7 @@ public class Voiture {
 	 * @param out l'endroit où imprimer (ex: System.out pour imprimer dans la
 	 *            console)
 	 */
+
 	public void imprimeStationnements(PrintStream out) {
 		// TODO: Implémenter cette méthode
 		throw new UnsupportedOperationException("Pas encore implémenté");

@@ -72,7 +72,7 @@ public class Voiture {
 
 	/**
 	 * Pour chaque garage visité, imprime le nom de ce garage suivi de la liste des
-	 * dates d'entrée / sortie dans ce garage
+	 * stationnements dans ce garage
 	 * <br>
 	 * Exemple :
 	 * 

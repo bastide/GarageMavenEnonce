@@ -8,22 +8,20 @@
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>21</maven.compiler.release>
         <!-- On configure le plugin permettant d'exécuter directement le programme avec maven -->
         <!-- On pourra exécuter le programme avec : 'mvn exec:java' -->
         <exec.mainClass>garages.Main</exec.mainClass>
-
+        <java.version>21</java.version>
     </properties>
 
     <build>
-
         <plugins>
-            <!-- Pb. de build sur Mac OS arm ? -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.13.0</version>
                 <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>

@@ -10,6 +10,9 @@ trim_trailing_whitespace = true # Supprime les espaces en fin de ligne
 
 [*.java]
 indent_size = 4            # Java specific indentation rules
+indent_style = tab         # Java specific indentation rules
+
+[*.js]
 
 [*.xml]
 indent_style = space

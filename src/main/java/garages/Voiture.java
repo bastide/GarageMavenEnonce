@@ -8,7 +8,6 @@ import lombok.ToString;
 import java.io.PrintStream;
 import java.util.*;
 
-
 /**
  * Représente une voiture qui peut être stationnée dans des garages.
  */
@@ -51,7 +50,7 @@ public class Voiture {
 
 	/**
 	 * Calcule l'ensemble des garages visités par cette voiture
-	 * 
+	 *
 	 * @return l'ensemble des garages visités par cette voiture
 	 */
 	public Set<Garage> garagesVisites() {
@@ -61,7 +60,7 @@ public class Voiture {
 
 	/**
 	 * Détermine si la voiture est actuellement dans un garage
-	 * 
+	 *
 	 * @return vrai si la voiture est dans un garage, faux sinon
 	 */
 	public boolean estDansUnGarage() {
@@ -75,7 +74,7 @@ public class Voiture {
 	 * stationnements dans ce garage
 	 * <br>
 	 * Exemple :
-	 * 
+	 *
 	 * <pre>
 	 * Garage(name=Universite Champollion Albi):
 	 * 		Stationnement{ entree=13/11/2024, sortie=13/11/2024 }

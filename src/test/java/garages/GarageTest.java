@@ -15,7 +15,7 @@ class GarageTest {
 	private Voiture voitureISIS;
 
 	@BeforeEach
-	public void setUp() throws NullPointerException {
+	void setUp() throws NullPointerException {
 		voitureISIS = new Voiture("123 XX 456");
 		garageCastres = new Garage("ISIS Castres");
 		garageAlbi = new Garage("Universite Champollion Albi");
@@ -86,15 +86,14 @@ class GarageTest {
 
 	/**
 	 * Exemple de test qui vérifie un format d'impression correct.<br>
-	 * `
-	 * La méthode "imprimeStationnements" est conçue pour être testable :<br>
+	 * ` La méthode "imprimeStationnements" est conçue pour être testable :<br>
 	 * Elle prend un paramètre "PrintStream" qui indique où on doit imprimer
 	 * (Injection de dépendance).<br>
 	 * Dans le test, on imprime dans une chaîne de caractères au lieu d'imprimer
 	 * directement dans la console (System.out)<br>
 	 * On peut ensuite vérifier que le contenu de la chaîne générée est conforme au
 	 * résultat attendu.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -121,16 +120,14 @@ class GarageTest {
 		assertEquals(1, countSubstring(output, garageAlbi.toString()),
 				garageAlbi.toString() + " doit apparaître une fois");
 
-		assertEquals(3, countSubstring(output, "Stationnement"),
-				"On doit imprimer trois stationnements");
+		assertEquals(3, countSubstring(output, "Stationnement"), "On doit imprimer trois stationnements");
 
-		assertEquals(1, countSubstring(output, "en cours"),
-				"Il doit y avoir un seul stationnement en cours");
+		assertEquals(1, countSubstring(output, "en cours"), "Il doit y avoir un seul stationnement en cours");
 	}
 
 	/**
-	 * Une méthode utilitaire pour le test ci-dessus
-	 * Compter le nombre d'occurrences d'une sous-chaîne dans une chaîne
+	 * Une méthode utilitaire pour le test ci-dessus Compter le nombre d'occurrences
+	 * d'une sous-chaîne dans une chaîne
 	 *
 	 * @param string    String to look for substring in.
 	 * @param substring Sub-string to look for.

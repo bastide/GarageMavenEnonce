@@ -2,6 +2,7 @@ package garages;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -15,7 +16,7 @@ class GarageTest {
 	private Voiture voitureISIS;
 
 	@BeforeEach
-	void setUp() throws NullPointerException {
+	void setUp(){
 		voitureISIS = new Voiture("123 XX 456");
 		garageCastres = new Garage("ISIS Castres");
 		garageAlbi = new Garage("Universite Champollion Albi");
